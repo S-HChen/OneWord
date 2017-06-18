@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(){
        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://121.42.150.20:8080/")
+                .baseUrl("http://120.27.5.185:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(new OkHttpClient())

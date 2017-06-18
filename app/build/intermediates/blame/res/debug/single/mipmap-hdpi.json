@@ -1,11 +1,23 @@
 [
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_action_discard.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-hdpi\\ic_action_discard.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\Administrator\\ccc\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_action_discard.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-hdpi\\ic_action_discard.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",

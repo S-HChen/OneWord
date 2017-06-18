@@ -42,10 +42,10 @@ public class Frament4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
          view=inflater.inflate(R.layout.tab4,container,false);
 
-        toolbar1= (Toolbar) getActivity().findViewById(R.id.toolbar1);
-        toolbar1.setTitle("");
+        toolbar1= (Toolbar) getActivity().findViewById(R.id.toolbar_account);
+       /* toolbar1.setTitle("");
         title= (TextView) getActivity().findViewById(R.id.Title);
-        title.setText("个人");
+        title.setText("个人");*/
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar1);
         touxiang= (ImageView) view.findViewById(R.id.touxiang);
         touxiang.setOnClickListener(new View.OnClickListener() {

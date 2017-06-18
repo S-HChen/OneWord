@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import smart.ccc.Bean.ArticleBean;
 import smart.ccc.Bean.DataBean;
 
 /**
@@ -22,10 +23,10 @@ import smart.ccc.Bean.DataBean;
  */
 
 public class recyclerViewadapter extends RecyclerView.Adapter {
-    private List<DataBean> lists;
+    private List<ArticleBean> lists;
     private Context context;
 
-    public recyclerViewadapter(List<DataBean> lists, Context context) {
+    public recyclerViewadapter(List<ArticleBean> lists, Context context) {
         this.lists = lists;
         this.context = context;
     }
@@ -51,10 +52,12 @@ public class recyclerViewadapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        Log.d("TAG", "onBindViewHolder: "+lists.get(position).getAutor());
-        ((myholder)holder).tv1.setText(lists.get(position).getAutor());
+        Log.d("TAG", "onBindViewHolder: "+lists.get(position).getAuthor());
+        ((myholder)holder).tv1.setText(lists.get(position).getAuthor());
         ((myholder)holder).tv2.setText(lists.get(position).getContent());
+/*
         Glide.with(context).load(lists.get(position).getUrl()).into( ((myholder)holder).imageView);
+*/
 
     }
 

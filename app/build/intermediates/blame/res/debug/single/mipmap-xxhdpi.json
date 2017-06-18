@@ -4,11 +4,31 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\default_check.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\default_error.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\default_error.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\asv.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\asv.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\btn_selected.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\btn_selected.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\asy.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\asy.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\btn_selected.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\btn_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\asy.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\asy.png"
     },
     {
@@ -18,6 +38,14 @@
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\default_error.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\default_error.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\default_check.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\default_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\btn_unselected.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\btn_unselected.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
@@ -34,5 +62,13 @@
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\btn_unselected.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\btn_unselected.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_action_discard.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\0d41a94458bc3cdef9861c03254858612bb9a91b\\output\\res\\mipmap-xxhdpi\\ic_action_discard.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     }
 ]

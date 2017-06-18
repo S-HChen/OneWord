@@ -35,6 +35,7 @@
         <activity android:name="smart.ccc.RegisterActivity" />
         <activity android:name="smart.ccc.SendArticleActivity" />
         <activity android:name="com.foamtrace.photopicker.PhotoPickerActivity" />
+        <activity android:name="smart.ccc.ClassifyActivity" />
         <activity android:name="com.foamtrace.photopicker.PhotoPreviewActivity" />
     </application>
 

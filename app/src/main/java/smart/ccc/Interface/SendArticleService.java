@@ -15,7 +15,7 @@ import smart.ccc.Bean.ResultData;
  */
 
 public interface SendArticleService {
-    @Multipart
-    @POST("CongService/comment")
-    Observable<ResultData> sendImage(@Query("arg")String publish,@Query("article")String article, @PartMap Map<String, RequestBody> params);
+
+    @POST("yuhu/PublishServlet")
+    Observable<ResultData> sendImage(@Query("arg")String publish,@Query("artical")String article);
 }

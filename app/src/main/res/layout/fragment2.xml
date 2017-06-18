@@ -5,17 +5,106 @@
     android:layout_width="match_parent"
     android:background="@drawable/background"
     android:layout_height="match_parent"
-    android:paddingRight="20dp">
+    android:paddingRight="0dp"
+    >
 
-    <GridView
-        android:id="@+id/gview1"
-
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/toolbar_search"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="【类别】"
+            android:textColor="#a2000000"
+            android:textSize="20dp"
+            android:typeface="monospace"
+            style="BOLD_ITALIC"
+            android:id="@+id/Title"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a0d9d8d8"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:numColumns="2"
-        android:scrollbars="none"
-        tools:listitem="@layout/item2"
-        ></GridView>
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:text="[文字]"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:text="[语录]"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:text="[歌词]"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:text="[电影]"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:text="[诗]"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
 
 </LinearLayout>

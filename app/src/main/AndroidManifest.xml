@@ -23,6 +23,7 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".SendArticleActivity"/>
         <activity android:name="com.foamtrace.photopicker.PhotoPickerActivity"/>
+        <activity android:name=".ClassifyActivity"/>
         <activity android:name="com.foamtrace.photopicker.PhotoPreviewActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>

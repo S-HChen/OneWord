@@ -28,6 +28,7 @@ import com.foamtrace.photopicker.intent.PhotoPickerIntent;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -111,56 +112,60 @@ public class SendArticleActivity extends AppCompatActivity {
 
     private void sendArticle(){
         ArticleBean articleBean=new ArticleBean();
-        /*articleBean.setUser(SPUtils.get(this,"user",null).toString());*/
+        articleBean.setUser(SPUtils.get(this,"user","Smart").toString());
+        Log.d("tag",SPUtils.get(this,"user","Smart").toString());
         articleBean.setTitle(et_title.getText().toString());
         articleBean.setContent(et_content.getText().toString());
         articleBean.setAuthor(et_author.getText().toString());
-        articleBean.setClassify(classify.getSelectedItem().toString());
+        articleBean.setClassify(String.valueOf(classify.getSelectedItemId())+1);
         articleBean.setMe(isMe.getShowText());
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://120.27.5.185:8080/")
+                .baseUrl("http://121.42.150.20:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(new OkHttpClient())
                 .build();
 
         String zz= JSONObject.toJSONString(articleBean);
-         Map map=new HashMap();
+     /*    Map map=new HashMap();
          File file=new File(imgPath);
          map.put("file"+"\";filename=\""+file.getName(), RequestBody.create(MediaType.parse("multipart/form-data"),file));
-        Log.d("cc","file"+"\";filename=\""+file.getName());
+        Log.d("cc","file"+"\";filename=\""+file.getName());*/
         final SendArticleService sendImageService1=retrofit.create(SendArticleService.class);
-        sendImageService1.sendImage("publish",zz,map)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .map(new Func1<ResultData, Object>() {
-                    @Override
-                    public Object call(ResultData resultData) {
-                        Log.d("TAG", "call: "+resultData.getStatus());
-                        return null;
-                    }
-                })
-                .subscribe(new Subscriber() {
-                    @Override
-                    public void onCompleted() {
-                        Toast.makeText(SendArticleActivity.this,"发表成功",Toast.LENGTH_SHORT).show();
-                        finish();
-                        Log.d("TAG", "onCompleted: success");
-                    }
+        try {
+            sendImageService1.sendImage("publish",java.net.URLEncoder.encode(zz,"utf-8"))
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .map(new Func1<ResultData, Object>() {
+                        @Override
+                        public Object call(ResultData resultData) {
+                            Log.d("TAG", "call: "+resultData.getStatus());
+                            return null;
+                        }
+                    })
+                    .subscribe(new Subscriber() {
+                        @Override
+                        public void onCompleted() {
+                            Toast.makeText(SendArticleActivity.this,"发表成功",Toast.LENGTH_SHORT).show();
+                            finish();
+                            Log.d("TAG", "onCompleted: success");
+                        }
 
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.d("TAG", "onError:"+e);
+                        @Override
+                        public void onError(Throwable e) {
+                            Log.d("TAG", "onError:"+e);
 
-                    }
+                        }
 
-                    @Override
-                    public void onNext(Object o) {
+                        @Override
+                        public void onNext(Object o) {
 
-                    }
-                });
-
+                        }
+                    });
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
 
 
     }
