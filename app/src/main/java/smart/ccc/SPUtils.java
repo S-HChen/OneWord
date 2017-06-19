@@ -36,22 +36,22 @@ public class SPUtils
 
 		if (object instanceof String)
 		{
-			editor.putString(key, (String) object);
+			editor.putString(key, (String) object).commit();
 		} else if (object instanceof Integer)
 		{
-			editor.putInt(key, (Integer) object);
+			editor.putInt(key, (Integer) object).commit();
 		} else if (object instanceof Boolean)
 		{
-			editor.putBoolean(key, (Boolean) object);
+			editor.putBoolean(key, (Boolean) object).commit();
 		} else if (object instanceof Float)
 		{
-			editor.putFloat(key, (Float) object);
+			editor.putFloat(key, (Float) object).commit();
 		} else if (object instanceof Long)
 		{
-			editor.putLong(key, (Long) object);
+			editor.putLong(key, (Long) object).commit();
 		} else
 		{
-			editor.putString(key, object.toString());
+			editor.putString(key, object.toString()).commit();
 		}
 
 		SharedPreferencesCompat.apply(editor);

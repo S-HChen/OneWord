@@ -145,7 +145,12 @@ public class Frament1 extends android.support.v4.app.Fragment{
                             recycler_view.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), new RecyclerItemClickListener.OnItemClickListener() {
                                 @Override
                                 public void onItemClick(View view, int position) {
-                                    getActivity().startActivity(new Intent(getActivity(),DetailActivity.class));
+                                    Intent intent=new Intent(getActivity(),DetailActivity.class);
+                                    Bundle bundle=new Bundle();
+                                    bundle.putSerializable("article",lists.get(position));
+                                    intent.putExtras(bundle);
+                                    getActivity().startActivity(intent);
+
 
                                 }
                             }));

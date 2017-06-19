@@ -1,10 +1,13 @@
 package smart.ccc.Bean;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2017/6/16 0016.
  */
 
-public class ArticleBean {
+public class ArticleBean implements Serializable{
+
     private String title;
     private String image;
     private String content;
@@ -12,6 +15,16 @@ public class ArticleBean {
     private String classify;
     private boolean isMe;
     private String user;
+    private  Integer articleid;
+
+
+    public Integer getArticleid() {
+        return articleid;
+    }
+
+    public void setArticleid(Integer articleid) {
+        this.articleid = articleid;
+    }
 
     public String getUser() {
         return user;

@@ -117,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#原创"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                 />
                 <TextView
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#文字"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     />
 
@@ -138,13 +138,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="收藏"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     android:layout_marginRight="5dp"/>
 
@@ -158,7 +158,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     android:layout_marginRight="5dp"/>
             </LinearLayout>
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="来自"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     android:layout_marginRight="5dp"/>
 
@@ -181,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="作者"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     android:layout_marginRight="5dp"/>
 
@@ -189,7 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="的文集"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"
                     android:layout_marginRight="5dp"/>
 
@@ -198,7 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="文字"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textColor="#DBDBDB"/>
 
             </LinearLayout>

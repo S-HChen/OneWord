@@ -28,7 +28,7 @@ public class main extends AppCompatActivity implements View.OnClickListener{
     private Toolbar toolbar1;
     private Frament1 tab1;
     private Frament2 tab2;
-    /*private Frament3 tab3;*/
+    private Frament3 tab3;
     private Frament4 tab4;
 
     @Override
@@ -37,6 +37,7 @@ public class main extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.main);
         tab1=new Frament1();
         tab2=new Frament2();
+        tab3=new Frament3();
         tab4=new Frament4();
         initView();
     /*    toolbar1.setTitle("主页");
@@ -46,8 +47,9 @@ public class main extends AppCompatActivity implements View.OnClickListener{
         bt_1.setBackgroundResource(R.drawable.main_clicked);
         getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab1,"tab1").commit();
         getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab2,"tab2").commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab3,"tab3").commit();
         getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab4,"tab4").commit();
-        getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab4).show(tab1).commit();
+        getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab3).hide(tab4).show(tab1).commit();
  /*       getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab1,"tab1").commit();
         getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab1,"tab1").commit();
         getSupportFragmentManager().beginTransaction().add(R.id.rmlayout,tab1,"tab1").commit();*/
@@ -89,37 +91,52 @@ public class main extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bt_1:
-                if (tab2 != null&&tab4!=null)
-                    getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab4).show(tab1).commit();
+                if (tab2 != null&&tab4!=null&&tab3!=null)
+                    getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab3).hide(tab4).show(tab1).commit();
                 else {
                     tab2= (Frament2) getSupportFragmentManager().findFragmentByTag("tab2");
+                    tab3= (Frament3) getSupportFragmentManager().findFragmentByTag("tab3");
                     tab4= (Frament4) getSupportFragmentManager().findFragmentByTag("tab4");
-                    getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab4).show(tab1).commit();
+                    getSupportFragmentManager().beginTransaction().hide(tab2).hide(tab3).hide(tab4).show(tab1).commit();
                 }
                 initImage();
                 bt_1.setBackgroundResource(R.drawable.main_clicked);
                   break;
 
             case R.id.bt_2:
-                if(tab1!=null&&tab4!=null)
-                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab4).show(tab2).commit();
+                if(tab1!=null&&tab4!=null&&tab3!=null)
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab3).hide(tab4).show(tab2).commit();
                 else{
                     tab1= (Frament1) getSupportFragmentManager().findFragmentByTag("tab1");
+                    tab3= (Frament3) getSupportFragmentManager().findFragmentByTag("tab3");
                     tab4= (Frament4) getSupportFragmentManager().findFragmentByTag("tab4");
-                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab4).show(tab2).commit();
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab3).hide(tab4).show(tab2).commit();
                 }
                 initImage();
                 bt_2.setBackgroundResource(R.drawable.search_clicked);
                 break;
-
-            case R.id.bt_4:
-
-                if(tab1!=null&&tab2!=null)
-                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).show(tab4).commit();
+            case R.id.bt_3:
+                if(tab1!=null&&tab4!=null&&tab2!=null)
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).hide(tab4).show(tab3).commit();
                 else{
                     tab1= (Frament1) getSupportFragmentManager().findFragmentByTag("tab1");
                     tab2= (Frament2) getSupportFragmentManager().findFragmentByTag("tab2");
-                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).show(tab4).commit();
+                    tab4= (Frament4) getSupportFragmentManager().findFragmentByTag("tab4");
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).hide(tab4).show(tab3).commit();
+                }
+                initImage();
+                bt_3.setBackgroundResource(R.drawable.comments_clicked);
+                break;
+
+            case R.id.bt_4:
+
+                if(tab1!=null&&tab2!=null&&tab3!=null)
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).hide(tab3).show(tab4).commit();
+                else{
+                    tab1= (Frament1) getSupportFragmentManager().findFragmentByTag("tab1");
+                    tab3= (Frament3) getSupportFragmentManager().findFragmentByTag("tab3");
+                    tab2= (Frament2) getSupportFragmentManager().findFragmentByTag("tab2");
+                    getSupportFragmentManager().beginTransaction().hide(tab1).hide(tab2).hide(tab3).show(tab4).commit();
                 }
                 initImage();
                 bt_4.setBackgroundResource(R.drawable.account_clicked);

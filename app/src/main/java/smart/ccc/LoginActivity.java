@@ -1,6 +1,7 @@
 package smart.ccc;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -88,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(){
        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://120.27.5.185:8080/")
+                .baseUrl("http://121.42.150.20:8080/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(new OkHttpClient())
@@ -104,8 +105,13 @@ public class LoginActivity extends AppCompatActivity {
 
                         @Override
                         public Object call(UserBean userBean) {
-                            SPUtils.put(LoginActivity.this,"name",userBean.getName());
-                            SPUtils.put(LoginActivity.this,"user",userBean.getUser());
+                            SharedPreferences sharedPreferences=getSharedPreferences("OneWord",MODE_PRIVATE);
+                            SharedPreferences.Editor edit=sharedPreferences.edit();
+                            edit.putString("name",userBean.getName());
+                            edit.putString("user",userBean.getUser());
+                            edit.commit();
+                           /* SPUtils.put(LoginActivity.this,"name",userBean.getName());
+                            SPUtils.put(LoginActivity.this,"user",userBean.getUser());*/
                             /*SPUtils.put(LoginActivity.this,"pwd",userBean.getPwd());*/
                             return null;
                         }

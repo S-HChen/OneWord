@@ -132,6 +132,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ccea1e039435997b72131017c3595ca86a57639d\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\timg.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\timg.jpg"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ccea1e039435997b72131017c3595ca86a57639d\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },

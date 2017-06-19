@@ -224,6 +224,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ccea1e039435997b72131017c3595ca86a57639d\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\layout\\comment.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\layout\\comment.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment2.xml",
         "source": "C:\\Users\\Administrator\\ccc\\app\\src\\main\\res\\layout\\fragment2.xml"
     },
@@ -470,6 +474,10 @@
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b62936c95a356ce84023a06e2968b375d495ffca\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\layout\\comitem.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\layout\\comitem.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tab4.xml",
