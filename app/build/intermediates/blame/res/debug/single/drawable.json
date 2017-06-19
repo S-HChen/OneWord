@@ -108,6 +108,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b62936c95a356ce84023a06e2968b375d495ffca\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\main_clicked.png",
         "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\main_clicked.png"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ccea1e039435997b72131017c3595ca86a57639d\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg1.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\bg1.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
@@ -194,6 +202,10 @@
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ccea1e039435997b72131017c3595ca86a57639d\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg4.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\bg4.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\comments_clicked.png",
@@ -290,6 +302,10 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\b62936c95a356ce84023a06e2968b375d495ffca\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg3.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\bg3.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lo.png",
@@ -398,6 +414,10 @@
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\image4.png",
         "source": "C:\\Users\\Administrator\\ccc\\app\\src\\main\\res\\drawable\\image4.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg2.jpg",
+        "source": "C:\\Users\\Administrator\\Desktop\\OneWord\\app\\src\\main\\res\\drawable\\bg2.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\ccc\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",

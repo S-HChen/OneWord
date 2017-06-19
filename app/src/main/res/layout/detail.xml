@@ -46,7 +46,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="520dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -138,7 +138,7 @@
                         android:layout_height="match_parent"
                         android:background="#ffffff"
                         android:gravity="center"
-                        android:text="收藏(100)"/>
+                        android:text="收藏()"/>
 
                     <ImageView
                         android:layout_width="30dp"
@@ -155,7 +155,7 @@
                         android:layout_height="match_parent"
                         android:background="#ffffff"
                         android:gravity="center"
-                        android:text="感悟(100)"/>
+                        android:text="感悟()"/>
 
                 </LinearLayout>
             </LinearLayout>

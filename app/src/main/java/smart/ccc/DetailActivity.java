@@ -52,7 +52,12 @@ public class DetailActivity extends AppCompatActivity {
 
         title.setText("由"+articleBean.getAuthor()+"创建");
         content.setText(articleBean.getContent());
-        author.setText(articleBean.getAuthor());
+        if(articleBean.isMe()) {
+            author.setText("#原创#");
+        }
+        else {
+            author.setText("#转载#");
+        }
         Title.setText(articleBean.getTitle());
     }
 }

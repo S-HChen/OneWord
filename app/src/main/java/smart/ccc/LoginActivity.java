@@ -73,6 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                public void onClick(View v) {
                    Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
                    startActivity(intent);
+
                }
            });
            final Button login = (Button) findViewById(R.id.btn_login);
@@ -80,6 +81,7 @@ public class LoginActivity extends AppCompatActivity {
                @Override
                public void onClick(View v) {
                       login();
+                      finish();
                }
            });
 

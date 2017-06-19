@@ -12,11 +12,11 @@ import smart.ccc.Bean.CommentBean;
  */
 
 public interface SendCommentService {
-    @GET("")
+    @GET("yuhu/CommentServlet")
     rx.Observable<List<CommentBean>> send(@Query("arg")String get , @Query("articleid")Integer articleid,@Query("user")String user,@Query("content")String content
     );
 
-    @GET("")
+    @GET("yuhu/CommentServlet")
     rx.Observable<List<CommentBean>> getbyid(@Query("arg")String getbyid , @Query("articleid")Integer articleid
     );
 

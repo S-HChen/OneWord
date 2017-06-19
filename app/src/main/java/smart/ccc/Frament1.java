@@ -48,7 +48,7 @@ public class Frament1 extends android.support.v4.app.Fragment{
 
     private Toolbar toolbar1;
     private RecyclerView recycler_view;
-    private TextView tv1,tv2;
+    private TextView tv1,tv2,classify;
     private View view;
     private List<ArticleBean> lists;
     private TextView title;
@@ -178,6 +178,8 @@ public class Frament1 extends android.support.v4.app.Fragment{
         recycler_view= (RecyclerView) view.findViewById(R.id.recycler_View);
         tv1= (TextView) view.findViewById(R.id.tv1);
         tv2= (TextView) view.findViewById(R.id.tv2);
+        title= (TextView) view.findViewById(R.id.title);
+        classify= (TextView) view.findViewById(R.id.classify);
 
 
     }

@@ -49,6 +49,7 @@ public class Frament4 extends Fragment {
     private ImageView touxiang;
     private String[] iconName;
     private List<ArticleBean> lists;
+    private TextView num;
 
     @Nullable
     @Override
@@ -60,6 +61,7 @@ public class Frament4 extends Fragment {
         title= (TextView) getActivity().findViewById(R.id.Title);
         title.setText("个人");*/
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar1);
+        num= (TextView) view.findViewById(R.id.num);
         touxiang= (ImageView) view.findViewById(R.id.touxiang);
         touxiang.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,6 +138,7 @@ public class Frament4 extends Fragment {
                         //配置适配器
                         gview.setAdapter(sim_adapter);
                         gview.setNumColumns(2);
+                        num.setText(""+gview.getCount());
                         Log.d("TAG", "onCompleted: "+lists);
                     }
 

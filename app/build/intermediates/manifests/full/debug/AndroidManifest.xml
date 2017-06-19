@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity
-            android:name="smart.ccc.main"
+            android:name="smart.ccc.LoginActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,13 +30,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="smart.ccc.DetailActivity" />
-        <activity android:name="smart.ccc.LoginActivity" />
-        <activity android:name="smart.ccc.RegisterActivity" />
-        <activity android:name="smart.ccc.SendArticleActivity" />
+        <activity
+            android:name="smart.ccc.DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="smart.ccc.main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="smart.ccc.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="smart.ccc.SendArticleActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.foamtrace.photopicker.PhotoPickerActivity" />
-        <activity android:name="smart.ccc.ClassifyActivity" />
-        <activity android:name="com.foamtrace.photopicker.PhotoPreviewActivity" />
+        <activity
+            android:name="smart.ccc.ClassifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.foamtrace.photopicker.PhotoPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="smart.ccc.CommentActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

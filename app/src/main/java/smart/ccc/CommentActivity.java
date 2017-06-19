@@ -3,6 +3,7 @@ package smart.ccc;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,6 +43,7 @@ public class CommentActivity extends AppCompatActivity{
     private SimpleAdapter sim_adapter;
     private Button send_comment;
     private EditText comment_content;
+    private TextView comnum;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,7 @@ public class CommentActivity extends AppCompatActivity{
         data_list=new ArrayList<Map<String, Object>>();
         send_comment= (Button) findViewById(R.id.send_comment);
         comment_content= (EditText) findViewById(R.id.comment_content);
+        comnum= (TextView) findViewById(R.id.comnum);
         initData();
         send_comment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,14 +78,16 @@ public class CommentActivity extends AppCompatActivity{
 
         final SendCommentService sendCommentService=retrofit.create(SendCommentService.class);
 
-        sendCommentService.getbyid("Comment",articleBean.getArticleid())
+        sendCommentService.getbyid("commentByid",articleBean.getArticleid())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .map(new Func1<List<CommentBean>, Object>() {
                     @Override
                     public Object call(List<CommentBean> commentBeen) {
                         lists.clear();
-                        lists.addAll(commentBeen);
+                        if (commentBeen != null) {
+                            lists.addAll(commentBeen);
+                        }
                         return null;
                     }
                 })
@@ -103,6 +109,7 @@ public class CommentActivity extends AppCompatActivity{
                         ListView list=(ListView)findViewById(R.id.comlist);
                         list.setAdapter(sim_adapter);
                         sim_adapter.notifyDataSetChanged();
+                        comnum.setText(String.valueOf(sim_adapter.getCount()));
                         Log.d("TAG", "onCompleted: "+lists);
                     }
 
@@ -136,7 +143,7 @@ public class CommentActivity extends AppCompatActivity{
 
         final SendCommentService sendCommentService=retrofit.create(SendCommentService.class);
 
-        sendCommentService.send("Comment",articleBean.getArticleid(),sharedPreferences.getString("user","Smart"),comment_content.getText().toString())
+        sendCommentService.send("comment",articleBean.getArticleid(),sharedPreferences.getString("user","Smart"),comment_content.getText().toString())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .map(new Func1<List<CommentBean>, Object>() {
@@ -165,6 +172,8 @@ public class CommentActivity extends AppCompatActivity{
                         ListView list=(ListView)findViewById(R.id.comlist);
                         list.setAdapter(sim_adapter);
                         sim_adapter.notifyDataSetChanged();
+                        comnum.setText(String.valueOf(sim_adapter.getCount()));
+
                         Log.d("TAG", "onCompleted: "+lists);
                     }
 
